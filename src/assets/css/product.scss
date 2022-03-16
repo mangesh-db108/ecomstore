@@ -1,0 +1,125 @@
+@import "./common.scss";
+
+.productsection {
+    padding:50px 0px 100px;
+    .prodimagebox {
+        width:40%;
+        .prodimg {
+            width:100%;
+            object-fit:contain;
+            max-height:350px;
+        }
+    }
+
+    .proddetails {
+        width:60%;
+        padding-left: 80px;
+        padding-top: 25px;    
+        .prodcat {
+            font-size:22px;
+            color:#808080;
+        }
+
+        .prodname {
+            font-size: 30px;
+            margin: 8px 0px 5px;
+        }
+
+        .prodrating {
+            font-weight:bold;
+            .fa-star {
+                color:$activecolor;
+            }
+        }
+
+        .prodprice {
+            margin-top: 50px;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .proddesc {
+            margin-bottom:15px;
+        }
+
+        .prodbtns {
+            button {
+                padding:5px 10px;
+                margin-right:10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.categorySection {
+    padding: 50px 0px;
+    .categorytitle {
+        font-size: 32px;
+        text-align: center;
+        color: #0a0909;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 15px;
+    }
+
+    .productCatBtn {
+        
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        button {
+            padding: 5px 10px;
+            margin:0px 5px;
+            cursor: pointer;
+        }
+    }
+
+    .productCatBtn {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .productCards {
+        display:flex;
+        flex-wrap:wrap;
+        margin: 15px -15px;
+        .productCard {
+            margin: 10px;
+            width: 23.23%;
+            border:1px solid #ccc;
+            text-align:center;
+            padding-bottom: 5px;
+            .prodimg {
+                width:100%;
+                object-fit: contain;
+                margin-bottom:10px;
+                max-height:250px;
+            }
+
+            .proddetails {
+                padding:10px;
+                .pname {
+                    min-height: 42px;
+                    font-size:18px;
+                    color:#4f4c4c;
+                    text-decoration:none;
+                    &:hover {
+                        color:$activecolor;
+                    }
+                }
+                .price {
+                    font-weight:bold;
+                    margin: 5px;
+                }
+                .buynowbtn {
+                    padding: 8px 10px;
+                    cursor: pointer;
+                    border:1px solid #ddd;
+                    margin-top:10px;
+                }
+            }
+        }
+    }
+
+}

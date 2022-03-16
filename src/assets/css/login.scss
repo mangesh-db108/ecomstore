@@ -1,0 +1,84 @@
+@import "./common.scss";
+
+ 
+
+.maincontainer {
+    height:100vh;
+    width:100%;
+    background:$gradientbg;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    .logincontainer {
+        width:350px;
+        height:400px;
+        background-color:$white;
+        border-radius:5px; 
+        padding: 20px;
+        position: relative;
+        .formtitle {
+            font-weight:bold;
+            font-size: 32px;
+            text-align:center;
+        }
+        button.active { 
+            background:$gradientbg;
+            color:#fff; 
+        }
+        button {
+            width:49%;
+             background:transparent; 
+            border:1px solid $activecolor;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            &:hover {
+                color:#fff;
+                background:$gradientbg;   
+            }
+        }
+
+        .formchangebtn {
+           justify-content: space-between;
+           margin-top:10px;
+            button {
+                width:49%;
+            }
+        }
+
+        .inputbody {
+            margin-top:25px;
+            input {
+                border:1px solid #ccc;
+                padding:8px;
+                width:100%;
+                margin-bottom:15px;
+                outline:0;
+            }
+            button {
+                width:100%;
+            }
+            .instructiontext {
+                margin-top: 50px;
+                text-align: center; 
+                font-weight: 600;
+                 color: #000;
+                
+                span {
+                    color:$activecolor;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .backtohomelink {
+            position: ABSOLUTE;
+            bottom: -32px;
+            text-align: center;
+            left: 28%;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+}
